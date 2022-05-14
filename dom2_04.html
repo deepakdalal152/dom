@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select, button{background-color: blue;color: red;}
+
+    </style>
+</head>
+<body>
+    <select name="select" id="country">
+        <option value="India">India</option>
+        <option value="United States of America">United States of America</option>
+        <option value="China">China</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+    </select>
+    <button class="btn" onclick="show()">Find Data</button>
+
+
+    <script>
+        function show()
+        {
+            var con = document.getElementById('country').value
+            switch (con) {
+                case 'India': alert("The continent is Asia")
+                    break;
+            
+                default:alert("This country is no in the list")
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
