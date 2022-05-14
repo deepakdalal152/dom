@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainBorder{
+            display: flex;
+            /* border: 2px solid red; */
+            height: 100px;
+            padding: 0% 10% 0% 10%;
+        }
+        .inBtn{
+            /* border: 2px blue solid; */
+            margin: auto;
+            height: 40%;
+            padding: .5%;
+            text-align: center;
+            font-size: 200%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 25px ;
+        }
+        .inBtn:first-child{background-color: blue;}
+        .inBtn:nth-child(2){background-color: gray;}
+        .inBtn:nth-child(3){background-color: green;}
+        .inBtn:nth-child(4){background-color: red;}
+        .inBtn:nth-child(5){background-color: gold;color: red;}
+        .inBtn:nth-child(6){background-color: lightseagreen;}
+        .inBtn:nth-child(7){color: pink;}
+        .inBtn:nth-child(2){background-color: black;}
+        .inBtn:last-child{color: blue;}
+    </style>
+</head>
+<body>
+    <div class="mainBorder">
+        <div class="inBtn">Primary</div>
+        <div class="inBtn">Secondary</div>
+        <div class="inBtn">Success</div>
+        <div class="inBtn">Danger</div>
+        <div class="inBtn">Warning</div>
+        <div class="inBtn">Info</div>
+        <div class="inBtn">Light</div>
+        <div class="inBtn">Dark</div>
+        <div class="inBtn">Link</div>
+    </div>
+</body>
+</html>
