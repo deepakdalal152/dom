@@ -177,19 +177,25 @@
                 var minS = parseInt(minScore.textContent);
                 var maxS = parseInt(maxScore.textContent);
 
-                if(currentScore.value < minS)
+                if(currentScore.value)
                 {
-                    minScore.textContent = currentScore.value
-                    currentScore.value = '';
+                    if(currentScore.value < minS)
+                    {
+                        minScore.textContent = currentScore.value
+                        currentScore.value = '';
+                    }
+                    else if(currentScore.value > maxS)
+                    {
+                        maxScore.textContent = currentScore.value;
+                        currentScore.value = '';
+                    }
+                    else
+                    {
+                        alert("We are no able to change scoreBoard, because the score is between min score and max score")
+                    }
                 }
-                else if(currentScore.value > maxS)
-                {
-                    maxScore.textContent = currentScore.value;
-                    currentScore.value = '';
-                }
-                else
-                {
-                    alert("We are no able to change scoreBoard, because the score is between min score and max score")
+                else{
+                    alert("Please enter a score ")
                 }
             }
     </script>
